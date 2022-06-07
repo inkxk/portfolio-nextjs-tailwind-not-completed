@@ -53,7 +53,10 @@ const Sidebar = () => {
             </div>
 
             {/* Email Button */}
-            <button className="bg-gradient-to-r from-green-400 to-blue-400 w-8/12 rounded-full py-2 px-5 my-2 text-white">
+            <button
+                className="bg-gradient-to-r from-green-400 to-blue-400 w-8/12 rounded-full py-2 px-5 my-2 text-white focus:outline-none"
+                onClick={() => window.open("mailto: potcharapol.nok@gmail.com")}
+            >
                 Contact Me!
             </button>
             <button className="bg-gradient-to-r from-green-400 to-blue-400 w-8/12 rounded-full py-2 px-5 my-2 text-white">

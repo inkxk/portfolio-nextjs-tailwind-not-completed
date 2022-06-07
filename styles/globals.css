@@ -3,6 +3,6 @@
 @tailwind utilities;
 
 body {
-    background-color: black;
-    font-family: 'JetBrains Mono', monospace;
+    @apply bg-gradient-to-tr from-blue-300 to-green-300;
+    font-family: 'Helvetica', 'Arial', sans-serif;
 }

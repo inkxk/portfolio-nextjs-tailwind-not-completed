@@ -5,11 +5,11 @@ import { GiTie } from "react-icons/gi";
 
 const Sidebar = () => {
     return (
-        <div>
+        <>
             <img
                 src="https://avatars.githubusercontent.com/u/64063112?v=4"
                 alt="user avatar"
-                className="w-32 h-32 rounded-full mx-auto"
+                className="w-40 h-40 rounded-full mx-auto"
             />
             <h3 className="my-4 text-3xl font-medium tracking-wider">
                 Potcharapol Nokyoo
@@ -23,7 +23,7 @@ const Sidebar = () => {
                 download="name"
             >
                 <GiTie className="w-6 h-6" />
-                Download Resume cursor-pointer
+                Download Resume
             </a>
 
             {/* Social Icons */}
@@ -46,16 +46,20 @@ const Sidebar = () => {
             >
                 <div className="flex items-center justify-center space-x-2">
                     <GoLocation />
-                    <span>Bangkok, Thailand</span>
+                    <span>Bangkok,Thailand</span>
                 </div>
-                <p>potcharapol.nok@gmail.com</p>
-                <p>+66880949523</p>
+                <p className="my-2">potcharapol.nok@gmail.com</p>
+                <p className="my-2">+66880949523</p>
             </div>
 
             {/* Email Button */}
-            <button>Contact Me!</button>
-            <button>Theme</button>
-        </div>
+            <button className="bg-gradient-to-r from-green-400 to-blue-400 w-8/12 rounded-full py-2 px-5 my-2 text-white">
+                Contact Me!
+            </button>
+            <button className="bg-gradient-to-r from-green-400 to-blue-400 w-8/12 rounded-full py-2 px-5 my-2 text-white">
+                Theme
+            </button>
+        </>
     );
 };
 

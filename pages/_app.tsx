@@ -1,6 +1,8 @@
 import "../styles/globals.css";
+import "@fontsource/jetbrains-mono";
 import type { AppProps } from "next/app";
 import Sidebar from "../components/Sidebar";
+import Navbar from "../components/Navbar";
 
 function MyApp({ Component, pageProps }: AppProps) {
     return (
@@ -9,6 +11,7 @@ function MyApp({ Component, pageProps }: AppProps) {
                 <Sidebar />
             </div>
             <div className="flex flex-col col-span-12 overflow-hidden bg-white shadow-custom-light dark:shadow-custom-dark rounded-2xl lg:col-span-9 dark:bg-dark-500">
+                <Navbar />
                 <Component {...pageProps} />
             </div>
         </div>

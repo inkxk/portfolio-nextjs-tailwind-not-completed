@@ -11,7 +11,12 @@ const NavItem: FC<{
     return activeItem !== name ? (
         <Link href={route}>
             <a>
-                <span onClick={() => setActiveItem(name)}>{name}</span>
+                <span
+                    onClick={() => setActiveItem(name)}
+                    className="hover:text-green-500"
+                >
+                    {name}
+                </span>
             </a>
         </Link>
     ) : null;
@@ -29,8 +34,10 @@ const Navbar = () => {
 
     return (
         <div className="flex justify-between px-5 py-3 my-3">
-            <span className="font-bold text-green-500">{activeItem}</span>
-            <div className="text-red-500 font-lg flex space-x-3">
+            <span className="font-bold text-green-500 text-xl border-b-4 border-green-500 md:text-2xl">
+                {activeItem}
+            </span>
+            <div className="text-lg flex space-x-5">
                 <NavItem
                     activeItem={activeItem}
                     setActiveItem={setActiveItem}

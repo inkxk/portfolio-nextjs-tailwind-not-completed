@@ -1,6 +1,6 @@
 import { IconType } from "react-icons";
 
-export type Service = {
+export type TypeService = {
     title: string;
     about: string;
     Icon: IconType;

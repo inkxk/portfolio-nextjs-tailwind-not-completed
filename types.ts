@@ -5,3 +5,9 @@ export type TypeService = {
     about: string;
     Icon: IconType;
 };
+
+export type TypeSkill = {
+    name: string;
+    level: string;
+    Icon: IconType;
+};

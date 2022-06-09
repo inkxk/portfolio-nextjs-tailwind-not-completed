@@ -2,10 +2,11 @@ import { RiComputerLine } from "react-icons/ri";
 import { FaServer } from "react-icons/fa";
 import { AiOutlineAntDesign, AiOutlineApi } from "react-icons/ai";
 import { MdDeveloperMode } from "react-icons/md";
+import { BsCircleFill } from "react-icons/bs";
 
-import { Service } from "./types";
+import { TypeService, TypeSkill } from "./types";
 
-export const services: Service[] = [
+export const services: TypeService[] = [
     {
         Icon: RiComputerLine,
         title: "Frontend Development",
@@ -35,5 +36,61 @@ export const services: Service[] = [
         Icon: RiComputerLine,
         title: "Whatever",
         about: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic quis minima autem!",
+    },
+];
+
+export const languages: TypeSkill[] = [
+    {
+        Icon: BsCircleFill,
+        name: "Python",
+        level: "45",
+    },
+    {
+        Icon: BsCircleFill,
+        name: "Java Script",
+        level: "60",
+    },
+    {
+        Icon: BsCircleFill,
+        name: "React Native",
+        level: "80",
+    },
+    {
+        Icon: BsCircleFill,
+        name: "React",
+        level: "70",
+    },
+    {
+        Icon: BsCircleFill,
+        name: "Django",
+        level: "80",
+    },
+    {
+        Icon: BsCircleFill,
+        name: "Bootstrap",
+        level: "80",
+    },
+];
+
+export const tools: TypeSkill[] = [
+    {
+        Icon: BsCircleFill,
+        name: "Figma",
+        level: "85",
+    },
+    {
+        Icon: BsCircleFill,
+        name: "Photoshop",
+        level: "45",
+    },
+    {
+        Icon: BsCircleFill,
+        name: "Illustrator",
+        level: "60",
+    },
+    {
+        Icon: BsCircleFill,
+        name: "Framer",
+        level: "45",
     },
 ];

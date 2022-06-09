@@ -4,12 +4,11 @@ import { TypeService } from "../types";
 const ServiceCard: FC<{ service: TypeService }> = ({
     service: { Icon, about, title },
 }) => {
-
     const createMarkup = () => {
         return {
-            __html:about
-        }
-    }
+            __html: about,
+        };
+    };
 
     return (
         <div className="flex items-center p-2 space-x-4">

@@ -30,13 +30,3 @@ const Home: NextPage = () => {
 
 export default Home;
 
-// export const getStaticProps: GetStaticProps = async () => {
-//     const res = await fetch("/api/services");
-//     const data = await res.json();
-
-//     return {
-//         props: {
-//             services: data.services,
-//         },
-//     };
-// };

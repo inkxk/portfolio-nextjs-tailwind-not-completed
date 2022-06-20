@@ -45,8 +45,8 @@ const resume = () => {
                         Language & Framework
                     </h5>
                     <div className="my-2">
-                        {languages.map((language, i) => (
-                            <Bar value={language} key={i} />
+                        {languages.map((language) => (
+                            <Bar data={language} key={language.name} />
                         ))}
                     </div>
                 </div>
@@ -55,8 +55,8 @@ const resume = () => {
                         Tools & Softwares
                     </h5>
                     <div className="my-2">
-                        {tools.map((tool, i) => (
-                            <Bar value={tool} key={i} />
+                        {tools.map((tool) => (
+                            <Bar data={tool} key={tool.name} />
                         ))}
                     </div>
                 </div>

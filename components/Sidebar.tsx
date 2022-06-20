@@ -2,8 +2,14 @@ import React from "react";
 import { AiFillGithub, AiFillLinkedin, AiFillInstagram } from "react-icons/ai";
 import { GoLocation } from "react-icons/go";
 import { GiTie } from "react-icons/gi";
+import { useTheme } from "next-themes";
 
 const Sidebar = () => {
+    const { theme, setTheme } = useTheme();
+    const changeTheme = () => {
+        setTheme(theme === "light" ? "dark" : "light");
+    };
+
     return (
         <>
             <img
@@ -59,7 +65,10 @@ const Sidebar = () => {
             >
                 Contact Me!
             </button>
-            <button className="bg-gradient-to-r from-green-400 to-blue-400 w-8/12 rounded-full py-2 px-5 my-2 text-white">
+            <button
+                className="bg-gradient-to-r from-green-400 to-blue-400 w-8/12 rounded-full py-2 px-5 my-2 text-white"
+                onClick={changeTheme}
+            >
                 Theme
             </button>
         </>
